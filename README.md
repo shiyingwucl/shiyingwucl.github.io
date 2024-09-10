@@ -1,5 +1,5 @@
 # Blog 
-![chiikawaimage](https://github.com/shiyingwucl/githubpage-blog/blob/main/images/chiikawa.png) hi :)
+![chiikawaimage](https://github.com/shiyingwucl/githubpage-blog/blob/main/images/chiikawa.png)  :3
 
 
 
