@@ -1,4 +1,4 @@
-# Blog 
+# Blog ![chiikawa image]:
 
 website needs:
 
