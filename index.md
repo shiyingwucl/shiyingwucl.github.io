@@ -1,5 +1,5 @@
 ---
-title: something
+title: Shiying's blog
 layout: home
 ---
 
