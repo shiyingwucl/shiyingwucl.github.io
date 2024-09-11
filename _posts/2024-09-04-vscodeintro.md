@@ -36,7 +36,7 @@ continue/pause, stepover, step into, step out, restart and stop)
 
 ### The side panel:
 
-<img src="../images/debugging_sidebar.png" alt=sidepanel/>
+![sidepanel](/images/debugging_sidebar.png)
 
 > **Variable:** shows the variables in the current debugging scope, including value and types  
 > **Watch:** tracks the value of specific expressions or variables you're interested in throughout the debugging session        
@@ -61,7 +61,7 @@ print(f"£{value} is equal to €{euros(value)}")
 
 Personally I really like the step into, and step out functionality, because it lets you see the process that happens internally when you're calling that func/method.   
 
-(but why no step back??? <img src= "../images/Pepe/Pepega.png" alt="pepega" width="15" length="15"/> )
+(but why no step back...![pepega](/images/Pepe/Pepega.png)?)
 
 And thats about it for today    
 <img src="https://tenor.com/en-GB/view/sad-cat-sunakook-tired-exhausted-gif-10606272476729293300.gif" width="50%" height="50%" />
