@@ -42,5 +42,5 @@ There is also the side bar:
 
 which you can use to track variable changes and see what functions/methods is called.
 
-And thats about it  
-![endnote](https://tenor.com/mNE0gVboyjM.gif)
+And thats about it    
+<img src="https://tenor.com/en-GB/view/sad-cat-sunakook-tired-exhausted-gif-10606272476729293300.gif" width="50%" height="50%" />
