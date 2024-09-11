@@ -3,26 +3,49 @@ layout: post
 title: Intro to VSCode
 ---
 
-So for the first day, I followed the vscode python tutorial [here](https://code.visualstudio.com/docs/python/python-tutorial)
+# Intro to VSCode
+So to start off, I followed the VSCode python tutorial <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">here</a>
 
-Learnt about how to use vscode (properly this time, instead of just using it as a plain text editor), and how to install the .venv environment
+It touches on topics like how to use VSCode (properly), setting up virtual environments, using the debugging tool and more.
 
+### **Useful general shortcuts**  
 > ctrl+shift+p : command palette    
-> very useful shortcut  
+> ctrl+k then ctrl+o : open folder  
+> ctrl+o : open file    
+> ctrl+shift+n : opens a new window
 
-and then I continued with using the debugging tool:     
+## Setting up virtual environment
+
+> open command palette    
+> python create new environment     
+> select .venv
+
+## Debugging
+using the debugging tool:     
 ![debugging tool bar](/images/debugging%20tool%20bar.png)   
-from left to right: continue/pause, stepover, step into, step out, restart and stop. 
+(From left to right:     
+continue/pause, stepover, step into, step out, restart and stop) 
 
-> Useful shortcuts:    
-> - breakpoint : f9   
-> - f5 : continue     
-> - f6 : pause    
-> - f10 : step over   
-> - f11 : step into   
-> - shift+f11 : step out  
+### **Useful debugging shortcuts:**    
+> F9 : breakpoint   
+> F5 : continue     
+> F6 : pause    
+> F10 : step over   
+> F11 : step into   
+> Shift+F11 : step out  
 
-Below is simple code I wrote to use to practice debugging 
+### The side panel:
+
+<img src="../images/debugging_sidebar.png" alt=sidepanel/>
+
+> **Variable:** shows the variables in the current debugging scope, including value and types  
+> **Watch:** tracks the value of specific expressions or variables you're interested in throughout the debugging session        
+> **Call stack:** shows the hierachy of function calls, indicating the path the program took to reach the current point          
+> **Loaded scripts:** lists all the scripts that have been loaded into the current debugging session, useful for navigating to different parts of the code or library being used
+which you can use to track variable changes and see what functions/methods is called.   
+
+### Writing some code to debug with
+Below is python code I wrote to use to practice debugging 
 
 ```python
 def euros(pound):
@@ -32,19 +55,13 @@ def euros(pound):
 
 value = input("enter the value in £:")
 print(f"£{value} is equal to €{euros(value)}")
+
+#code that converts pound to euros
 ```
 
-I found the step into, and step out quite useful, bc it lets you see the process when you're calling that func/method.
+Personally I really like the step into, and step out functionality, because it lets you see the process that happens internally when you're calling that func/method.   
 
-There is also the side bar:
+(but why no step back??? <img src= "../images/Pepe/Pepega.png" alt="pepega" width="15" length="15"/> )
 
-![debugging_sidebar](/images/debugging_sidebar.png)
-
-variable - shows the variables in the current debugging scope, including value and types
-watch - tracks the value of specific expressions or variables you're interested in throughout the debugging session     
-call stack - shows the hierachy of function calls, indicating the path the program took to reach the current point      
-loaded scripts - lists all the scripts that have been loaded into the current debugging session, useful for navigating to different parts of the code or library being used
-which you can use to track variable changes and see what functions/methods is called.   
-
-And thats about it    
+And thats about it for today    
 <img src="https://tenor.com/en-GB/view/sad-cat-sunakook-tired-exhausted-gif-10606272476729293300.gif" width="50%" height="50%" />
