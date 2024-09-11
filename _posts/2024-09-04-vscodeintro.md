@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vscode intro
+title: Intro to VSCode
 ---
 
 So for the first day, I followed the vscode python tutorial [here](https://code.visualstudio.com/docs/python/python-tutorial)

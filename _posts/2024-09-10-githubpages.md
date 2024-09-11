@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Second week stuff
+title: Github
 ---
 
 I followed the vscode python tutorial.  
