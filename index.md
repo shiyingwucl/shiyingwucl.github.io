@@ -1,5 +1,5 @@
 ---
-title: Shiying's blog
+title: My Software Development learning progress
 layout: home
 ---
 

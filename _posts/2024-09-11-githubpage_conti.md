@@ -1,4 +1,4 @@
 ---
 layout: post
-title: Github
+title: GitHub Pages continued (work in progress)
 ---

@@ -1,8 +1,4 @@
 ---
 layout: post
-title: Github
+title: Intro to GitHub Pages (work in progress)
 ---
-
-I followed the vscode python tutorial.  
-
-learnt about how to use vscode(properly), did a simple debugging of a quick code that I wrote in python.s
