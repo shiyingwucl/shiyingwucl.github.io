@@ -1,5 +1,5 @@
 ---
-title: My Software Development learning progress
+title: Home
 layout: home
 ---
 
