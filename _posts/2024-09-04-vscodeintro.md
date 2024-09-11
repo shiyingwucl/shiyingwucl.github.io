@@ -41,8 +41,8 @@ There is also the side bar:
 ![debugging_sidebar](/images/debugging_sidebar.png)
 
 variable - shows the variables in the current debugging scope, including value and types
-watch - tracks the value of specific expressions or variables you're interested in throughout the debugging session 
-call stack - shows the hierachy of function calls, indicating the path the program took to reach the current point  
+watch - tracks the value of specific expressions or variables you're interested in throughout the debugging session     
+call stack - shows the hierachy of function calls, indicating the path the program took to reach the current point      
 loaded scripts - lists all the scripts that have been loaded into the current debugging session, useful for navigating to different parts of the code or library being used
 which you can use to track variable changes and see what functions/methods is called.   
 
