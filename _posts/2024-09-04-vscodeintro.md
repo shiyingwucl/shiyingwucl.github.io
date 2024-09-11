@@ -32,6 +32,4 @@ value = input("enter the value in £:")
 print(f"£{value} is equal to €{euros(value)}")
 ```
 
-
-
-    I found the step into(a function/method), and step out (a function/method) quite useful, bc it lets you see the process when you're calling that func/method.
+I found the step into(a function/method), and step out (a function/method) quite useful, bc it lets you see the process when you're calling that func/method.
