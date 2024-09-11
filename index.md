@@ -1,5 +1,5 @@
 ---
-title: Shiying's blog
+title: Home
 layout: home
 ---
 
