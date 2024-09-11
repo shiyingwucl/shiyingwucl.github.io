@@ -8,9 +8,9 @@ draft:
 - followed github skills > github page (link here tba)
 
 
-#creating site/blog from GitHub repositories with GitHub pages
+# creating site/blog from GitHub repositories with GitHub pages
 
-1. Enable GitHub pages:
+1. Deploying GitHub pages:  
 repository > settings > pages >deploy from branch > main > save
 
 2. edit config_.yml
