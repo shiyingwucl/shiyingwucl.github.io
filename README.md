@@ -19,9 +19,9 @@ An ***extremely*** messy blog currently
 - [x] markdown
 - [ ] html
 - [ ] css
-- [ ] other stuff to make website look less scuffed
+- [ ] other stuff to make website look less scuffed 
 
 **things to be fixed:**
 
-- [ ] broken image links in _posts/2024-09-04-vscodeintro.md
+- [ ] broken image links in _posts/2024-09-04-vscodeintro.md    
 - [ ] broken image links in _posts/2024-09-05-environment.md
