@@ -12,7 +12,8 @@ It touches on topics like how to use VSCode (properly), setting up virtual envir
 > ctrl+shift+p : command palette    
 > ctrl+k then ctrl+o : open folder  
 > ctrl+o : open file    
-> ctrl+shift+n : opens a new window
+> ctrl+shift+n : opens a new window     
+> ctrl+shift+left/right_arrow_key : select the word
 
 ## Setting up virtual environment
 
@@ -61,7 +62,7 @@ print(f"£{value} is equal to €{euros(value)}")
 
 Personally I really like the step into, and step out functionality, because it lets you see the process that happens internally when you're calling that func/method.   
 
-(but why no step back...![pepega](/images/Pepe/Pepega.png)?)
+(but why no step back... <img src= "https://shiyingwucl.github.io/blob/posts/images/PeepoWhy.png" alt="peepowhy" width="25" >)
 
 And thats about it for today    
 <img src="https://tenor.com/en-GB/view/sad-cat-sunakook-tired-exhausted-gif-10606272476729293300.gif" width="50%" height="50%" />
