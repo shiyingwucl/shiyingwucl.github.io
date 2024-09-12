@@ -14,6 +14,8 @@ It touches on topics like how to use VSCode (properly), setting up virtual envir
 > ctrl+o : open file    
 > ctrl+shift+n : opens a new window     
 > ctrl+shift+left/right_arrow_key : select the word
+> ctrl+shift+alt+up/down_arrow_key : multiple line edits    
+>
 
 ## Setting up virtual environment
 
