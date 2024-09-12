@@ -32,5 +32,5 @@ to use .conda environment, I needed to install anacoda. which i did from their s
 
 didn't really know what to configure for the installer, so I just went will the default setting.
 
-after that, I wanted to create an environment within a folder, but I kept making the mistake of creating the environment in the parent folder instead. (pepega)
+after that, I wanted to create an environment within a folder, but I kept making the mistake of creating the environment in the parent folder instead. <img src= "../images/Pepe/Pepega.png" alt="pepega" width="25"/>
 

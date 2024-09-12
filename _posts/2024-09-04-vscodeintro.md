@@ -61,7 +61,7 @@ print(f"£{value} is equal to €{euros(value)}")
 
 Personally I really like the step into, and step out functionality, because it lets you see the process that happens internally when you're calling that func/method.   
 
-(but why no step back...![pepega](/images/Pepe/Pepega.png)?)
+(but why no step back...<img src="../images/PeepoWhy.png" alt="peepowhy" width="25" >
 
 And thats about it for today    
 <img src="https://tenor.com/en-GB/view/sad-cat-sunakook-tired-exhausted-gif-10606272476729293300.gif" width="50%" height="50%" />
