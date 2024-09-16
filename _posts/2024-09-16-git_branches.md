@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Branches in git
+title: Working with git branches
 ---
 
-# [Resource](https://learngitbranching.js.org/) used today
+[Resource](https://learngitbranching.js.org/) used today
 
 ## git commit
 
@@ -60,7 +60,7 @@ specifying commit hashes can be tedious but you can enter just enough characters
 relative commit:
 
 moving upwards one commit at a time with ^
-moving upwards a number of times with ~<num>
+moving upwards a number of times with ~\<num>
 you can ref HEAD as a relative ref
 
 caret ^
@@ -128,3 +128,26 @@ git rebase -i HEAD~4
 
 ## Juggling commits
 
+## Git Tags
+
+a more permant mark of important points in your project history rather than using branches
+you can reference this tag similarly to branch
+
+```bash
+git tag v1 "commit1"
+```
+
+## Git Describe
+
+a command to describe where you are in relation to the closest tag
+
+```bash
+git describe <ref>
+# if you don't specify a ref, git uses where HEAD is at
+```
+
+outcome will be \<tag>_\<numCommits>_g\<hash>
+
+> tag: closest ancestor tag in history
+> numCommits is how many commits away that tag is
+> \<hash> is the hash of the commit being described 
