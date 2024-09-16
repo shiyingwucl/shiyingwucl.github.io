@@ -36,7 +36,7 @@ To use .conda environment, I needed to install anacoda. which is avaliable [here
 
 didn't really know what to configure for the installer, so I just went with the default setting.
 
-after that, I wanted to create an environment within a folder, but I kept making the mistake of creating the environment in the parent folder instead   
+after that, I wanted to create an environment within a folder, but I kept making the mistake of creating the environment in the parent folder instead( remember to open folder in the correct location)   
 ![pepega](/images/emotes/PeepoWhy.png)
 
 conda is confusing to setup so I'll just leave it here for now, probably will come back to it later at some point...
