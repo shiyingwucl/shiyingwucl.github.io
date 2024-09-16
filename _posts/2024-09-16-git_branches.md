@@ -9,7 +9,7 @@ title: Branches in git
 
 git records a snapshot of all the tracked files in your directory
 
-git wants to keep commits as lightweight as possible, so it can compress a commit as a set of changes, "delta" from one 
+git wants to keep commits as lightweight as possible, so it can compress a commit as a set of changes, "delta" from one
 
 git also maintains a history of which commits were made when. ancestor commits
 
@@ -30,6 +30,7 @@ git checkout -b yourbranchname
 git branch yourbranchname
 git checkout yourbranchname
 ```
+
 ## git rebase
 
 ```bash
@@ -51,6 +52,7 @@ meaning attaching it to a commit instead of a branch, don't really understand th
 ```bash
 git checkout HEAD^
 ```
+
 ## Relative refs
 
 specifying commit hashes can be tedious but you can enter just enough characters until it could identify the commit you're refering to
@@ -62,6 +64,7 @@ moving upwards a number of times with ~<num>
 you can ref HEAD as a relative ref
 
 caret ^
+
 ```bash
 git check out main^ 
 # moves to the commit one step before the branch
@@ -71,13 +74,14 @@ main^^
 
 ## The ~ operator
 
-you can use the tolde(~) operator to move several step back in the commit tree. 
+you can use the tolde(~) operator to move several step back in the commit tree.
 
 ```bash
 git checkout HEAD~4
 ```
 
 ## Branch forcing
+
 ```bash
 git branch -f main HEAD~3
 # moves the main branch to three parents commit behind HEAD
@@ -85,15 +89,42 @@ git branch -f main HEAD~3
 git branch -f main c6
 # moves the branch to the commit
 ```
+
 Note: git branch -f command is not allowed for you current branch in a real git environment
 
 reversing changes in git
-there are many ways to reverse changes in Git. 
+there are many ways to reverse changes in Git.
 
 reversing changes are similar to committing, it has both a low-level component(staging individual changes) and a high-level component (the changes that are actually reversed.)
 
 ```bash
 git reset
+# reverses changes by moving branch reference backwards in time to an older commit
+
 git revert
+# git reset does not work for remote branches, so to be able to reverse and share those changes, git revert is used
+
 ```
+
+pushed (remote branch)
+local (local branch)
+
+## Git cherry-pick
+
+```bash
+git cherry-pick <commit1> <commit2> <...>
+# copy a series of commit below your current HEAD
+```
+
+## git interactive rebase
+
+when you don't know which commit you want to use for cherry pick, you can use:
+
+```bash
+git rebase -i HEAD~4
+```
+
+## Locally stacked commits
+
+## Juggling commits
 
