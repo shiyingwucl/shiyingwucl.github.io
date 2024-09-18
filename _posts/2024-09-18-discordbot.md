@@ -45,7 +45,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     # "on_message()" is called when discord detects a message
-    if message.author ==client.user: 
+    if message.author == client.user: 
         # checks if the message is from the bot itself
         return 
         # returns nothing (this is to stop bot from replying to its own)
@@ -54,4 +54,13 @@ async def on_message(message):
 
 client.run("token") 
 # this is needed to make the connection between the discord and the program
+```
+
+[more ways of handling commands](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
+
+```python
+@bot.command()
+async def hi(ctx,arg):
+    await ctx.send(arg)
+#ctx = context
 ```
