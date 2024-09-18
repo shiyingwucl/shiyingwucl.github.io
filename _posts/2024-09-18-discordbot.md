@@ -34,6 +34,8 @@ client = discord.Client(intents=intents)
 # connection to discord?
 ```
 
+## starting up bot
+
 ```python
 # discord.py uses asynchronous callback
 
@@ -41,7 +43,11 @@ client = discord.Client(intents=intents)
 async def on_ready(): 
     # "on_ready()" is an event that is called when the discord bot is online and logged in 
     print(f'We have logged in as {client.user}')
+```
 
+## basic ways to add functionality
+
+```python
 @client.event
 async def on_message(message):
     # "on_message()" is called when discord detects a message
@@ -51,9 +57,16 @@ async def on_message(message):
         # returns nothing (this is to stop bot from replying to its own)
     if message.content.startswith("!hello"):
         await message.channel.send("Hi!")
+```
 
+## connecting to discord api
+
+```python
 client.run("token") 
 # this is needed to make the connection between the discord and the program
+
+
+#you can put your token in a .env file so that it is hidden if your source code is hosted publicly
 ```
 
 [more ways of handling commands](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
