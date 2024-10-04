@@ -55,3 +55,5 @@ Python variable name rules:
 3. They must begin with a letter or an underscore, not a digit.
 
 4. Names that begin with an underscore are treated specially 
+
+5. Cannot be one of python's reserved keywords
