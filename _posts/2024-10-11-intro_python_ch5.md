@@ -36,7 +36,7 @@ You can also have three single or three double quotes to create a docstring/ mul
 
 Note:(I thought docstring is another way of commenting but it seems like python interprets the docstring and does not ignore it)
 
-## 4. Print() vs automatic echo from interpreter
+## 4. print() vs automatic echo from interpreter
 
 print() strips the quotes from string and keeps the line break for multi-line string
 
@@ -91,14 +91,42 @@ print(start + start + middle + end)
 # Goodbye.
 ```
 
-## String slicing
+## 11. String slicing
 
-you can input an offset/index inside a square bracket []:
+- you can input an offset/index inside a square bracket [] to get a character from a string
 
-```python
+- putting a minus like: [-1] counts from the last character
 
+- you will get an IndexError if the index is longer than the length of string
 
+### replace()
+``` python
+name = 'Henny'
+name.replace('H', 'P')
+#output: 'Penny'
+
+# slicing could yield same result
+'P' + name[1:]
+#output: 'Penny'
 ```
 
+### create a substring with slice
+format: "your_string"[start:end:step]
 
+- start: the index you want to begin from (inclusive)
+- end: the index which you want to end at (exclusive)
+- step: the number of characters you skip each step
 
+putting a minus sign before index makes the count start from the end
+
+## 12. len()
+
+counts the number of character in a string, could be used with other sequence types too
+
+## 13. split()
+
+```python
+tasks = 'get gloves,get mask,give cat vitamins,call ambulance'
+tasks.split(',')
+
+```
