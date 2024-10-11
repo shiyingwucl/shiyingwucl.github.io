@@ -37,6 +37,7 @@ You can also have three single or three double quotes to create a docstring/ mul
 Note:(I thought docstring is another way of commenting but it seems like python interprets the docstring and does not ignore it)
 
 ## 4. print() vs automatic echo from interpreter
+## 4. print() vs automatic echo from interpreter
 
 print() strips the quotes from string and keeps the line break for multi-line string
 
@@ -91,6 +92,7 @@ print(start + start + middle + end)
 # Goodbye.
 ```
 
+## 11. String slicing
 ## 11. String slicing
 
 - you can input an offset/index inside a square bracket [] to get a character from a string
