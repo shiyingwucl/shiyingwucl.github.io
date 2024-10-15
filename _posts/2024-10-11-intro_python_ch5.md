@@ -113,6 +113,8 @@ name.replace('H', 'P')
 
 you could also add an additional argument in name.replace("H","P") to specify how many times you want to replace the item. 
 
+you could also add an additional argument in name.replace("H","P") to specify how many times you want to replace the item. 
+
 ### create a substring with slice
 format: "your_string"[start:end:step]
 
@@ -128,6 +130,7 @@ counts the number of character in a string, could be used with other sequence ty
 
 ## 13. split()
 
+returns a list of separated items from a string
 returns a list of separated items from a string
 ```python
 tasks = 'get gloves,get mask,give cat vitamins,call ambulance'
