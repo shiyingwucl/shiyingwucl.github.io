@@ -93,7 +93,6 @@ print(start + start + middle + end)
 ```
 
 ## 11. String slicing
-## 11. String slicing
 
 - you can input an offset/index inside a square bracket [] to get a character from a string
 
@@ -112,6 +111,8 @@ name.replace('H', 'P')
 #output: 'Penny'
 ```
 
+you could also add an additional argument in name.replace("H","P") to specify how many times you want to replace the item. 
+
 ### create a substring with slice
 format: "your_string"[start:end:step]
 
@@ -127,8 +128,54 @@ counts the number of character in a string, could be used with other sequence ty
 
 ## 13. split()
 
+returns a list of separated items from a string
 ```python
 tasks = 'get gloves,get mask,give cat vitamins,call ambulance'
-tasks.split(',')
-
+tasks.split(',') #if delimiter is not specified, python uses any sequence of white space characters
 ```
+
+## 14.join()
+
+join() is like opposite of split, returns a list of strings back into a single string.
+
+```python
+crypto_list = ['Yeti', 'Bigfoot', 'Loch Ness Monster']
+crypto_string = ', '.join(crypto_list)
+print('Found and signing book deals:', crypto_string)
+# output: Found and signing book deals: Yeti, Bigfoot, Loch Ness Monster
+```
+
+## 15. strip()
+
+you can use this function to remove certain character, especially spaces:
+
+- lstrip(): remove from the left of string
+- rstrip(): remove from right of string
+
+## 16. Search
+
+these checks returns True/False:
+
+.startswith()
+.endswith()
+.isalnum() :is all characters either numbers or letter
+
+.count() : counts how many times the substring occurs in the string
+
+## 17. find() vs index()
+
+.find()
+.index()
+
+if substring isn't found, .find() returns -1 whereas .index() raises an exception
+
+## 18. Case
+
+.capitalize() :capitalize the string
+.title() :capitalize all the words
+.upper() :uppercase all the words
+.lower() :lowercase all the words
+.swapcase() :swaps uppercase and lowercase
+
+## 19. Alignment
+
