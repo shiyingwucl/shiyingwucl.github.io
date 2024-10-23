@@ -182,3 +182,69 @@ if substring isn't found, .find() returns -1 whereas .index() raises an exceptio
 
 ## 19. Alignment
 
+you can input arguments for  how many spaces to:
+.center() 
+.ljust()
+.rjust()
+
+## 20. formatting
+
+interpolating data values:
+old style, new style, f-string
+
+### old style: %
+
+Format and examples:
+```python
+#format_string % data
+"%s" % 34
+```
+
+syntax|name
+------|----
+%s| string
+%d| decimal integer
+%x| hex integer
+%o| octal integer
+%f| decimal float
+%e| exponential float
+%g| decimal or exponential float
+%%| a literal %
+
+%s for any data type and Python will format it as a string with no spaces
+
+String and integer interpolation:
+```python
+"Our cat %s weighs %s pounds" % (cat, weight)
+```
+### new style: {} and format
+
+```python
+#format_string.format(data)
+thing = "something"
+"{}".format(thing)
+
+#output: something
+
+thing = 'woodchuck'
+place = 'lake'
+'The {} is in the {}.'.format(thing, place)
+#output: The woodchuck is in the lake.
+```
+
+you can also specify the arguments' position:
+
+```python
+'The {1} is in the {0}.'.format(place, thing)
+
+#output: The woodchuck is in the lake
+```
+
+### f strings
+
+Format:
+```python
+f"The {thing} is in the {positon}
+```
+
+## Exercise 
