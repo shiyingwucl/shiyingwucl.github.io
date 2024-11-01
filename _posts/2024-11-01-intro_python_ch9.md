@@ -160,3 +160,177 @@ Gathers keywords argument into a dictionary by prefixing double aterisk (**)
 2. Optional positional arguments (*args)
 
 3. Optional keyword arguments (**kwargs)
+
+## 13. keyword-only arguments
+
+```python
+>>> def print_data(data, *, start=0, end=100):
+...     for value in (data[start:end]):
+...         print(value)
+```
+
+the ```*``` indicates all the parameter after it must be passed in as keyword arguments only(name = value)
+
+## 14. mutable and immutable arguments
+
+values of mutable arguments can be changed from within the function,however, it's good practice to not do this. Instead, document this or return the new value.
+
+## 15. docstrings
+
+docstrings are strings at the beginning of the function. 
+
+They can include rich formatting and be displayed with help(), or just help(func_name.__doc__) for the raw docstring.
+
+## 16. Inner functions
+
+you can define a function within a function:
+
+```python
+>>> def outer(a, b):
+...     def inner(c, d):
+...         return c + d
+...     return inner(a, b)
+```
+
+this may be done to avoid code repetition
+
+## 17. closure functions
+
+an inner function can acts as a closure. It can access the local variables of the outer function it is defined in.
+
+## 18. lambda
+
+- single statement function
+
+example:
+```python
+lambda word: word.capitalize() + '!'
+```
+
+## 19. Generator
+
+- a Python sequence creation object
+- can iterate through huge sequences without storing all of it in memory.
+- generator keeps track of where it is at when iterating and returns the next value
+
+## 20. Generator functions:
+
+- use yield instead of return
+
+```python
+>>> def my_range(first=0, last=10, step=1):
+...     number = first
+...     while number < last:
+...         yield number
+...         number += step
+# it is a normal function but it returns a generator object
+```
+Note
+A generator can be run only once. Lists, sets, strings, and dictionaries exist in memory, but a generator creates its values on the fly and hands them out one at a time through an iterator. It doesn’t remember them, so you can’t restart or back up a generator.
+
+## 21. Generator comprehension
+
+- surrounded by parentheses ```()``` instead of square or curly bracketss
+- similar syntax to other comprehensions
+
+## 22. decorators
+
+- modifying an existing function without changing its source code
+- decorators are function that takes a function as input and return a new function
+- you can use ```@decorator_name``` before the function instead of manually assignment
+- multiple decorator can be applied to a single function, the run order of decorator depends is closest first and furtherest last   
+
+example of decorator function:
+```python
+>>> def document_it(func):
+...     def new_function(*args, **kwargs):
+...         print('Running function:', func.__name__)
+...         print('Positional arguments:', args)
+...         print('Keyword arguments:', kwargs)
+...         result = func(*args, **kwargs)
+...         print('Result:', result)
+...         return result
+...     return new_function
+```
+
+## 23. Namespaces and scope
+
+- namespace are sections where a name is unique and unrelated to same name in other namespaces
+- each functions contains its own namespace
+- the main part of a program have a global namespace, and its variables are global
+- global variable is accessable from within a function
+
+if you try to access AND change a global variable from within a function , an error would occur:
+
+```python
+animal = "cow"
+def change_and_print_global():
+    print('inside change_and_print_global:', animal)
+    animal = 'wombat'
+    print('after the change:', animal)
+
+#output: UnboundLocalError: local variable 'animal' referenced before assignment
+```
+
+## 24. global() and local()
+
+- you can explictly state which namespace varaible you want to access with global() and local()
+- python defaults to using local namespace within a function
+- without arguments, local() and global() returns a dictionary of contents in its respective namespaces
+
+## 25. _ (underscore) and __ (double underscores) in names
+
+- names begin and end with two underscores are reserved Python names, so it's good to avoid this format when naming things
+
+examples:
+```python
+yourfunction.__name__ # name of the
+yourfunction.__doc__ # docstring of the function 
+```
+
+## 26. recursion
+
+- recursion happens when a functions calls itself
+- to avoid infinite recursion, python automatically raises an error
+- recursion is useful for dealing with uneven data
+
+
+## 27. async functions
+
+- ```async``` and ```await``` were added to python in 3.5
+- details in section appendix C
+
+## 28. Exceptions
+
+- it's good practice to add expection handling to avoid programs abruptly shutting down
+- try and except block are used to handle exceptions
+- the following format can be used for except block to get the full exception object ```except exceptiontype as name```
+
+you can define your own exceptions by using class:
+
+```python
+>>> class UppercaseException(Exception):
+...     pass
+...
+>>> words = ['eenie', 'meenie', 'miny', 'MO']
+>>> for word in words:
+...     if word.isupper():
+...         raise UppercaseException(word)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+__main__.UppercaseException: MO
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
